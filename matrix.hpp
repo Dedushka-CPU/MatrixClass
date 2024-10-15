@@ -25,5 +25,14 @@ void Matrix<T>::MakeRectangle(){
 		row.resize(max_size);
 	}
 }
+template <typename T>
+Matrix <T>::Matrix(size_t rows,size_t cows){
+				data.resize(rows);
+				for(auto& r:data){
+					r.resize(cows);
+				}
+		}
+		
+
 
 #endif //MATRIX_H

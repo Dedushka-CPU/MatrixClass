@@ -20,6 +20,7 @@ indent_mode=2
 [project]
 name=MAtrix
 base_path=/home/stud-17/projects/MAtrix/
+description=
 
 [long line marker]
 long_line_behaviour=1
@@ -27,9 +28,9 @@ long_line_column=72
 
 [files]
 current_page=2
-FILE_NAME_0=0;C++;0;EUTF-8;1;1;0;%2Fhome%2Fstud-17%2Fprojects%2FMAtrix%2Fmain.cpp;0;4
-FILE_NAME_1=142;C++;0;EUTF-8;1;1;0;%2Fhome%2Fstud-17%2Fprojects%2FMAtrix%2Fmatrix.h;0;4
-FILE_NAME_2=37;C++;0;EUTF-8;1;1;0;%2Fhome%2Fstud-17%2Fprojects%2FMAtrix%2Fmatrix.hpp;0;4
+FILE_NAME_0=498;C++;0;EUTF-8;1;1;0;%2Fhome%2Fstud-17%2Fprojects%2FMAtrix%2Fmatrix.h;0;4
+FILE_NAME_1=614;C++;0;EUTF-8;1;1;0;%2Fhome%2Fstud-17%2Fprojects%2FMAtrix%2Fmatrix.hpp;0;4
+FILE_NAME_2=340;C++;0;EUTF-8;1;1;0;%2Fhome%2Fstud-17%2Fprojects%2FMAtrix%2Fmain.cpp;0;4
 
 [VTE]
 last_dir=/home/stud-17
