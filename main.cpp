@@ -4,26 +4,32 @@
 using std::cin;
 using std::cout;
 
+
+		
 int main(){
 	Matrix<int> m({
-	{1,2,6},
-	{1}
+	{1,2},
+	{1,5}
 	});
 	
-	cout<<m.GetCows()<<"\n";
-	cout<<m.GetRows()<<"\n";
+	/*cout<<m.GetCows()<<"\n";
+	cout<<m.GetRows()<<"\n";*/
 	
-	Matrix<double> md(1,5);
-	cout<<md.GetCows()<<"\n";
-	cout<<md.GetRows()<<"\n";
-	int el=m(0,1);
-	cout<<el<<"\n";
-	for(size_t i=0;i<m.GetRows();i++){
-			for(size_ j=0;i<m.GetCows();j++){
-				cout<<m(i,j)<<" ";
-			}
-			cout<<"\n";
-	}
+	Matrix<double> md(10,5);
+	/*cout<<md.GetCows()<<"\n";
+	cout<<md.GetRows()<<"\n";*/
+	//int el=m(0,1);
+	/*cout<<el<<"\n";*/
+	cout<<m;
+	cout<<"\n";
+	cout<<md;
+	Matrix<int> m2(2,2);
+	cin>>m2;
+	cout<<"============\n";
+	cout<<m2;
+	cout<<"============\n";
+	//m2+=m;
+	cout<<m2+m;
 	//md[0].resize(10);                 
 	return 0;
 }

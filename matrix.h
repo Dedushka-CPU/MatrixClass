@@ -2,6 +2,7 @@
 #define MATRIX_H
 #include <iostream>
 #include <vector>
+#include <stdexcept>
 
 template <typename T>
 
@@ -28,7 +29,29 @@ class Matrix{
 		const T& operator()(size_t i,size_t j) const{
 			return data[i][j]; 
 		}
+		using const_iterator = decltype(data.cbegin());
+		std::vector<std::vector<T>>::const_iterator begin() ;
+		std::vector<std::vector<T>>::const_iterator end() ;
+		Matrix<T>& operator +=(const Matrix<T>& other){
+			const size_t rows=GetRows();
+			const size_t cows=GetCows();
+			if(rows!=other.GetRows()|| cows!=other.GetCows()){
+				throw std::invalid_argument("Different size");
+			}
+			for(size_t i=0;i!=rows;i++){
+				for(size_t j=0;j!=cows;j++){
+					data[i][j]+=other.data[i][j];
+				}
+				
+			}
+			return *this;
+		}
 };
-
+template <typename T>
+std::ostream& operator <<(std::ostream& out,const Matrix<T>& matrix);
+template <typename T>
+std::istream& operator >>(std::istream& in,const Matrix<T>& matrix);
+template <typename T>
+Matrix<T>& operator +(const Matrix<T>& m1,const Matrix<T>& m2);
 #include "matrix.hpp"
 #endif //MATRIX_H
